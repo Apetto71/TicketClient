@@ -2,24 +2,32 @@ package it.aaperio.TicketClient;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-public class FXMLController implements Initializable {
-    
+public class FXMLController {
+
     @FXML
-    private Label label;
-    
+    private ResourceBundle resources;
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private URL location;
+
+    @FXML
+    private TextField txtserver;
+
+    @FXML
+    private TextField txtuser;
+
+    @FXML
+    private PasswordField txtpassword;
+
+    @FXML
+    void initialize() {
+        assert txtserver != null : "fx:id=\"txtserver\" was not injected: check your FXML file 'Scene.fxml'.";
+        assert txtuser != null : "fx:id=\"txtuser\" was not injected: check your FXML file 'Scene.fxml'.";
+        assert txtpassword != null : "fx:id=\"txtpassword\" was not injected: check your FXML file 'Scene.fxml'.";
+
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
 }
