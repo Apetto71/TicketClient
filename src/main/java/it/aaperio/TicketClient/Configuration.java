@@ -24,6 +24,8 @@ import org.apache.log4j.PropertyConfigurator;
 	private static final String USER_HOME = sys_prop.getProperty("user.home");
 	private static final String WORK_DIR = new String(USER_HOME + FILE_SEPARATOR + ".TicketClient");
 			
+	// File di configurazione:
+	private static File config_file;
 	// Parametri di connessione al server ed al DB
 	private static String PORTA = new String("30500");
 	private static String HOST = new String();
@@ -32,7 +34,7 @@ import org.apache.log4j.PropertyConfigurator;
 	// Costruttore vuoto per classe singleton
 	private Configuration() {};
 	
-	private static Configuration getConfiguration() {
+	public static Configuration getConfiguration() {
 		Configuration c;
 		if (configurazione == null) {
 			c= new Configuration();
@@ -76,30 +78,30 @@ import org.apache.log4j.PropertyConfigurator;
 		// instanzio il logger e inizio a loggare
 		PropertyConfigurator.configure(log_file.toString());
 		logger = Logger.getLogger(Configuration.class);
-		logger.info("TicketClientattivo");
+		logger.info("TicketClient attivo");
 		
 		// Verifico che esista il file di configurazione dell'applicazione
 		config = new Properties();
-		File config_file = new File (WORK_DIR + FILE_SEPARATOR + "TKClient.cfg");
+		config_file = new File (WORK_DIR + FILE_SEPARATOR + "TKClient.cfg");
 		
 		
-		logger.debug("Verifico che il file di configurazione dell'applicazione esista");
+		logger.info("Verifico che il file di configurazione dell'applicazione esista");
 		if (!config_file.exists()) {
 			try {
 				config_file.createNewFile();
-				logger.debug("Il file di configurazione non esiste. Definisco il file di configurazione del client: " + config_file.toString());
+				logger.info("Il file di configurazione non esiste. Definisco il file di configurazione del client: " + config_file.toString());
 			} catch (IOException e) {
 				logger.error("Errore nella creazione del file di configurazione",e);
 			}
 		
 			//Definisco i parametri di default che vengono salvati nel file
-			logger.debug("Imposto i parametri di configurazione di default");
+			logger.info("Imposto i parametri di configurazione di default");
 			config.setProperty("PORTA", "30500");
 			config.setProperty("HOST", "localhost");
-			config.setProperty("LAST_USER", null);
+			config.setProperty("LAST_USER", "");
 						
 			try {
-				logger.debug("Definisco lo Stream per salvare i valori di default");
+				logger.info("Definisco lo Stream per salvare i valori di default");
 				FileOutputStream out;
 				out = new FileOutputStream(config_file);
 				config.store(out, "Commento");

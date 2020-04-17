@@ -23,7 +23,7 @@ public class Model {
 				model = m;
 			} else {m = model;};
 			
-			config = new Configuration();
+			config = Configuration.getConfiguration();
 			
 			return m;
 		}
