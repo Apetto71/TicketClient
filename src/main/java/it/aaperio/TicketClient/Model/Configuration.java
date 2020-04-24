@@ -1,4 +1,4 @@
-package it.aaperio.TicketClient;
+package it.aaperio.TicketClient.Model;
 
 import java.util.Properties;
 import java.io.*;
@@ -161,6 +161,7 @@ import org.apache.log4j.PropertyConfigurator;
 	}
 
 	public static void setHOST(String hOST) {
+		logger.debug("Imposto HOST a:" + hOST);
 		HOST = hOST;
 	}
 
@@ -169,6 +170,7 @@ import org.apache.log4j.PropertyConfigurator;
 	}
 
 	public static void setLAST_USER(String lAST_USER) {
+		logger.debug("Imposto la LAST_USER a:" + lAST_USER);
 		LAST_USER = lAST_USER;
 	}
 	
