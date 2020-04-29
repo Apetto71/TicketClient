@@ -36,19 +36,19 @@
             </MenuBar>
             <HBox>
                <children>
-                  <TextField fx:id="txtserver" promptText="Server">
+                  <TextField fx:id="txtServer" promptText="Server">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin></TextField>
-                  <TextField fx:id="txtuser" promptText="User">
+                  <TextField fx:id="txtUser" promptText="User">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin></TextField>
-                  <PasswordField fx:id="txtpassword" promptText="Password">
+                  <PasswordField fx:id="txtPassword" promptText="Password">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin></PasswordField>
-                  <Button mnemonicParsing="false" text="Connetti">
+                  <Button fx:id="btnConnetti" mnemonicParsing="false" onAction="#hdlConnetti" text="Connetti">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
