@@ -395,3 +395,23 @@ java.net.SocketException: Connection reset by peer: socket write error
 2020-04-24 17:37:07 DEBUG [it.aaperio.TicketClient.Model.Model:49] - Imposto la variabile di stato connected = true
 2020-04-24 17:37:07 INFO [it.aaperio.TicketClient.Model.Model:75] - Invio messaggio al server Buongiorno
 2020-04-24 17:37:07 INFO [it.aaperio.TicketClient.Model.Connection:73] - Thread di connessione al server attivo
+2020-04-29 16:19:19 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-04-29 16:19:19 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-04-29 16:19:19 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-04-29 16:19:19 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-04-29 16:19:19 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-04-29 16:20:18 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-04-29 16:20:18 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-04-29 16:20:18 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-04-29 16:20:18 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-04-29 16:20:18 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-04-29 16:26:36 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-04-29 16:26:36 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-04-29 16:26:36 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-04-29 16:26:36 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-04-29 16:26:36 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-04-29 16:29:08 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-04-29 16:29:08 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-04-29 16:29:08 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-04-29 16:29:08 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-04-29 16:29:08 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
