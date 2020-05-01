@@ -16,6 +16,7 @@ public class EntryPoint extends Application {
     public void start(Stage stage) throws Exception {
         Model model = Model.getModel() ;
         FXMLController controller ;
+        
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Scene.fxml")) ;
         Parent root = loader.load();
         Scene scene = new Scene(root);
@@ -23,10 +24,8 @@ public class EntryPoint extends Application {
         
         controller = loader.getController() ; 
         controller.setModel(model) ;
-    		
-    	
-        
-        stage.setTitle("JavaFX and Maven");
+   
+        stage.setTitle("Ticket Client");
         stage.setScene(scene);
         stage.show();
     }
