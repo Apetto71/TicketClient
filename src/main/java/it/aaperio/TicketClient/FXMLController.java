@@ -63,6 +63,10 @@ public class FXMLController {
         assert btnConnetti != null : "fx:id=\"btnConnetti\" was not injected: check your FXML file 'Scene.fxml'.";
         
         // Imposto i campi di default
+<<<<<<< HEAD
+=======
+        //logger.debug ("Imposto il valore di default del Server") ;
+>>>>>>> branch 'Connessione' of https://github.com/Apetto71/TicketClient.git
         txtServer.setText(model.getConfig().getHOST()) ;
         txtUser.setText (model.getConfig().getLAST_USER()) ;
     }

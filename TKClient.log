@@ -43,3 +43,58 @@
 2020-04-29 18:08:06 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
 2020-04-29 18:08:06 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
 2020-04-29 18:08:06 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:16:24 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:16:24 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:16:24 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:16:24 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:16:24 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:17:22 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:17:22 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:17:22 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:17:22 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:17:22 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:25:04 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:25:04 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:25:04 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:25:04 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:25:04 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:27:21 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:27:21 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:27:21 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:27:21 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:27:21 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:29:10 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:29:10 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:29:10 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:29:10 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:29:10 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:32:14 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:32:14 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:32:14 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:32:14 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:32:14 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:42:52 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:42:52 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:42:52 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:42:52 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:42:52 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:43:32 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:43:32 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:43:32 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:43:32 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:43:32 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:46:36 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:46:36 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:46:36 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:46:36 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:46:36 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:47:12 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:47:12 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:47:12 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:47:12 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:47:12 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
