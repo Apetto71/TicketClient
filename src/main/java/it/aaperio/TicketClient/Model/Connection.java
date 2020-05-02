@@ -8,7 +8,13 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.UUID;
+
 import org.apache.log4j.*;
+
+import it.aaperio.ticketserver.model.Messaggio;
+
+
 
 public class Connection extends Thread {
 	
@@ -21,6 +27,7 @@ public class Connection extends Thread {
 	private boolean connected;
 	private String host;
 	private int port;
+	private UUID sessionId;
 	
 	
 	public Connection(String h, int p)	{
@@ -70,11 +77,12 @@ public class Connection extends Thread {
 	
 	public void run() {
 		
-			logger.info("Thread di connessione al server attivo");
+			logger.info("Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi");
 			while (this.connected) {
 				try {
-					String msg = (String) in.readObject();
-					System.out.println(msg + "/n");
+					Messaggio msg = (Messaggio) in.readObject();
+					// Metto il messaggio in lavorazione
+
 				} catch (ClassNotFoundException e) {
 					logger.error("Errore in lettura dallo stream " + in.toString(), e);
 					setConnected (false);
