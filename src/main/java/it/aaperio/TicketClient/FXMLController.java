@@ -62,7 +62,7 @@ public class FXMLController {
         assert btnConnetti != null : "fx:id=\"btnConnetti\" was not injected: check your FXML file 'Scene.fxml'.";
         
         // Imposto i campi di default
-        logger.debug ("Imposto il valore di default del Server") ;
+        //logger.debug ("Imposto il valore di default del Server") ;
         txtServer.setText(model.getConfig().getHOST()) ;
         txtUser.setText (model.getConfig().getLAST_USER()) ;
     }
