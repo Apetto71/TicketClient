@@ -1,8 +1,10 @@
 package it.aaperio.TicketClient.Model;
 
 import java.io.IOException;
-import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 
+import it.aaperio.ticketserver.model.Messaggio ;
 import org.apache.log4j.Logger;
 
 
@@ -14,14 +16,14 @@ public class Model {
 	private static Configuration config;
 	private boolean connected = false;
 	private Connection connection;
-	private ConcurrentLinkedDeque<String> codamsginput;
+	private Queue<Messaggio> codamsginput;
 	
 	// Costruttore della classe singleton
 	private Model() {
 		config = Configuration.getConfiguration();
 		logger = Logger.getLogger(Model.class);
 		logger.info("Istanzio la coda di messaggi in input");
-		codamsginput = new ConcurrentLinkedDeque<String>();
+		codamsginput = new LinkedBlockingQueue<Messaggio>() ;
 	}
 		
 	// Costruttore Singleton
@@ -54,28 +56,18 @@ public class Model {
 			
 		}
 		
-		// Legge una stringa dal buffer in input e la mette nella coda di lavorazione
-		public String receiveString() {
-			String buf;
-			try {
-				buf = (String) connection.getIn().readObject();
-			} catch (IOException e1) {
-				logger.error("Errore in lettura dalla socket" , e1);
-				buf = "Errore in lettura";
-			} catch (ClassNotFoundException e2) {
-				logger.error("Errore in lettura, mi aspettavo una stringa è arrivato qualcos altro", e2);
-				buf = "Errore in lettura";
-			} 
-			this.codamsginput.add(buf);
-			return buf;
-		}
-
-		public boolean sendString(String s) {
+		/**
+		 * Invio di un messaggio al server correttamente compilato con il sessionId corrente
+		 * @param m: Messaggio da inviare
+		 * @return: Ritorna true se l'invio è andato a buon fine, altrimenti false
+		 */
+		public boolean sendMsg(Messaggio m) {
 			boolean c = false;
-			logger.info("Invio messaggio al server " + s);
+			m.setSessionId(connection.getSessionId());
+			logger.info("Invio messaggio al server " + m.toString());
 			try {
 				connection.getOut().flush();
-				connection.getOut().writeBytes(s);
+				connection.getOut().writeObject(m) ;
 				c = true;
 			} catch (IOException e) {
 				c = false;
@@ -83,7 +75,13 @@ public class Model {
 			}
 			return c;
 		}
+
+		public void addMessageToQueue(Messaggio msg) {
+			this.codamsginput.add(msg) ;
+			logger.info ("Messaggio aggiunto alla coda di lavorazione: " + msg.toString()) ;
+		}
 		
+
 		public void closeConnection() {
 			connection.closeSocket();
 		}
@@ -103,6 +101,22 @@ public class Model {
 		public Connection getConnection() {
 			return connection;
 		}
+
+		/**
+		 * @return the codamsginput
+		 */
+		public Queue<Messaggio> getCodamsginput() {
+			return codamsginput;
+		}
+
+		/**
+		 * @param codamsginput the codamsginput to set
+		 */
+		public void setCodamsginput(Queue<Messaggio> codamsginput) {
+			this.codamsginput = codamsginput;
+		}
+		
+		
 		
 		
 }

@@ -98,3 +98,52 @@
 2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
 2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
 2020-05-01 18:47:47 INFO [it.aaperio.TicketClient.Model.Model:23] - Istanzio la coda di messaggi in input
+2020-05-02 17:28:55 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-02 17:28:55 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-02 17:28:55 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-02 17:28:55 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-02 17:28:55 INFO [it.aaperio.TicketClient.Model.Model:25] - Istanzio la coda di messaggi in input
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Model:25] - Istanzio la coda di messaggi in input
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Model:47] - Preparo la classe connection per attivare la connessione con il server
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Connection:40] - Provo a fare la connessione al server: localhost su porta: 30500
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Connection:57] - Cerco di creare il buffer in scrittura
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Connection:67] - Cerco di creare il buffer in lettura
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Connection:80] - Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi
+2020-05-03 17:42:32 INFO [it.aaperio.TicketClient.Model.Model:81] - Messaggio aggiunto alla coda di lavorazione: it.aaperio.ticketserver.model.Messaggio@3cefa521
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Model:25] - Istanzio la coda di messaggi in input
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Model:47] - Preparo la classe connection per attivare la connessione con il server
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Connection:40] - Provo a fare la connessione al server: localhost su porta: 30500
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Connection:57] - Cerco di creare il buffer in scrittura
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Connection:67] - Cerco di creare il buffer in lettura
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Connection:80] - Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi
+2020-05-03 17:45:51 INFO [it.aaperio.TicketClient.Model.Model:81] - Messaggio aggiunto alla coda di lavorazione: it.aaperio.ticketserver.model.Messaggio@529276b2
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Model:25] - Istanzio la coda di messaggi in input
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Model:47] - Preparo la classe connection per attivare la connessione con il server
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Connection:40] - Provo a fare la connessione al server: localhost su porta: 30500
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Connection:57] - Cerco di creare il buffer in scrittura
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Connection:67] - Cerco di creare il buffer in lettura
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Connection:80] - Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi
+2020-05-03 17:58:32 INFO [it.aaperio.TicketClient.Model.Model:81] - Messaggio aggiunto alla coda di lavorazione: it.aaperio.ticketserver.model.Messaggio@2dcf82b7
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Configuration:81] - TicketClient attivo
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Configuration:88] - Verifico che il file di configurazione dell'applicazione esista
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Configuration:114] - Carico il file di configurazione
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Configuration:140] - Imposto i parametri di configurazione letti dal file
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Model:25] - Istanzio la coda di messaggi in input
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Model:47] - Preparo la classe connection per attivare la connessione con il server
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Connection:40] - Provo a fare la connessione al server: localhost su porta: 30500
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Connection:57] - Cerco di creare il buffer in scrittura
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Connection:67] - Cerco di creare il buffer in lettura
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Connection:80] - Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi
+2020-05-03 17:58:57 INFO [it.aaperio.TicketClient.Model.Model:81] - Messaggio aggiunto alla coda di lavorazione: it.aaperio.ticketserver.model.Messaggio@2dcf82b7

@@ -80,8 +80,8 @@ public class Connection extends Thread {
 			logger.info("Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi");
 			while (this.connected) {
 				try {
-					Messaggio msg = (Messaggio) in.readObject();
-					// Metto il messaggio in lavorazione
+					Messaggio msg = (Messaggio) in.readObject() ; 
+					model.addMessageToQueue(msg) ;
 
 				} catch (ClassNotFoundException e) {
 					logger.error("Errore in lettura dallo stream " + in.toString(), e);
@@ -118,6 +118,16 @@ public class Connection extends Thread {
 
 	public void setConnected(boolean connected) {
 		this.connected = connected;
+	}
+
+
+	public UUID getSessionId() {
+		return sessionId;
+	}
+
+
+	public void setSessionId(UUID sessionId) {
+		this.sessionId = sessionId;
 	}
 	
 	
