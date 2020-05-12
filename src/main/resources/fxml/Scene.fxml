@@ -34,7 +34,7 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <HBox>
+            <HBox fx:id="hboxConnection">
                <children>
                   <TextField fx:id="txtServer" promptText="Server">
                      <HBox.margin>

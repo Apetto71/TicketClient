@@ -12,6 +12,7 @@ import java.util.UUID;
 
 import org.apache.log4j.*;
 
+import it.aaperio.ticketserver.model.Comandi;
 import it.aaperio.ticketserver.model.Messaggio;
 
 
@@ -24,7 +25,7 @@ public class Connection extends Thread {
 	private ObjectInputStream in;
 	private ObjectOutputStream out;
 	private Model model;
-	private boolean connected;
+	private boolean connected = false;
 	private String host;
 	private int port;
 	private UUID sessionId;
@@ -36,22 +37,20 @@ public class Connection extends Thread {
 		this.host = h;
 		this.port = p;
 		
-		boolean c = false;
 		logger.info("Provo a fare la connessione al server: " + host +" su porta: " + port);
 		try {
 			this.sock = new Socket(host,port);
-			c= true;
+			
 		}	catch (UnknownHostException e1) {
-			c = false;
+			
 			logger.error("Host " + host +" sconosciuto ", e1);
 		}	catch (IOException e2) {
-			c= false;
+			
 			logger.error("Connessione rifiutata da host: " + host + ":" + port, e2);
 		}	catch (NullPointerException e3) {
+			
 			logger.error("Errore di NullPointerException", e3);
-		}	finally {
-			this.setConnected(c);
-		}
+		}	
 		
 		try {
 			logger.info("Cerco di creare il buffer in scrittura");
@@ -72,12 +71,31 @@ public class Connection extends Thread {
 		}	
 		logger.debug("Creato il buffer in lettura " + in.toString());
 		
-	}
-	
+		
+	}	
+		
 	
 	public void run() {
-		
 			logger.info("Thread di connessione al server attivo, mi metto in ascolto per ricevere messaggi");
+			this.connected = true ;
+			try {
+				Messaggio msg = (Messaggio) in.readObject() ; 
+				if (msg.getComando().equals(Comandi.CONNECT)) {
+					this.sessionId = msg.getSessionId() ;
+					logger.debug ("Impostato il sessionId ricevuto: " + msg.getSessionId()) ;
+				} else {
+					closeSocket() ;
+					throw new IllegalArgumentException ("Mi aspettavo di ricevere iil sessionId") ;
+				}
+
+			} catch (ClassNotFoundException e) {
+				logger.error("Errore in lettura dallo stream " + in.toString(), e);
+				setConnected (false);
+			} catch (IOException e) {
+				logger.error("Errore IOException in lettura dallo stream: "+ in,e);
+				setConnected (false);
+			}
+			
 			while (this.connected) {
 				try {
 					Messaggio msg = (Messaggio) in.readObject() ; 

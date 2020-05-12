@@ -1,5 +1,11 @@
 package it.aaperio.TicketClient.Model;
 
+import java.io.IOException;
+
+import it.aaperio.ticketserver.model.Comandi;
+import it.aaperio.ticketserver.model.Messaggio;
+import it.aaperio.ticketserver.model.User;
+
 public class TestModel {
 
 	Model m = Model.getModel();
@@ -21,10 +27,17 @@ public class TestModel {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("La coda è vuota? " + m.getCodamsginput().isEmpty()) ;
-		if (!m.getCodamsginput().isEmpty()) {
-			System.out.println("Il session ID ricevuto è: " + m.getCodamsginput().peek().getSessionId().toString()) ;
-		}
+		User u1 = new User("aaperio", "Password_personale") ;
+		System.out.println("Utente creato " + u1.toString()) ;
+		m.autorizza(u1) ;
+		
+		
+		User u2 = new User("mtarsilla", "PasswordTarsilla") ;
+		System.out.println("Utente creato " + u2.toString()) ;
+		m.autorizza(u2) ;
+		
+		
+		
 		
 	}
 }
